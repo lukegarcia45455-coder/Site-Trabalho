@@ -1,0 +1,54 @@
+.product-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    .product:hover .product-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .add-cart-btn {
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .add-cart-btn:hover {
+      background: #cc3333;
+      transform: scale(1.05);
+    }
+
+    .product-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .cart-feedback {
+      color: white;
+      font-size: 12px;
+      margin-top: 10px;
+      font-weight: bold;
+    }

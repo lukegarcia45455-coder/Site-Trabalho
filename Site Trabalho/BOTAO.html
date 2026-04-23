@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VHS CLUB</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="shortcut icon" href="LOGO DO SITE/image.png" type="image/x-icon">
+  <style>
+      </style>
+</head>
+<body>
+<div class="topbar">
+  BLACK FRIDAY SALE • UP TO 50% OFF
+</div>
+
+<header>
+  <div class="logo">VHS CLUB</div>
+
+  <nav>
+    <a href="#">SHOP</a>
+    <a href="#">COLLECTIONS</a>
+    <a href="#">BRAND</a>
+    <a href="#">LOOKS</a>
+  </nav>
+
+  <div class="icons" id="cartIcons">
+    🛒 <span id="cartCount" style="font-size:10px;color:#ff4444;">0</span> 🔍 ☰
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>BLACK FRIDAY SALE</h1>
+    <button>ENTER THE SALE</button>
+  </div>
+</section>
+
+<section class="products">
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Azul.png" alt="Baggy Azul">
+      <div class="product-overlay" onclick="addToCart('Baggy Azul', 45)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-azul"></div>
+      </div>
+    </div>
+    <p>Baggy Azul</p>
+    <span>$45</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Branco.png" alt="Baggy Branco">
+      <div class="product-overlay" onclick="addToCart('Baggy Branco', 75)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-branco"></div>
+      </div>
+    </div>
+    <p>Baggy Branco</p>
+    <span>$75</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Cinza.png" alt="Baggy Cinza">
+      <div class="product-overlay" onclick="addToCart('Baggy Cinza', 90)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-cinza"></div>
+      </div>
+    </div>
+    <p>Baggy Cinza</p>
+    <span>$90</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Jeans Escuro.png" alt="Baggy Jeans Escuro">
+      <div class="product-overlay" onclick="addToCart('Baggy Jeans Escuro', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-jeans-escuro"></div>
+      </div>
+    </div>
+    <p>Baggy Jeans Escuro</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Jeans.png" alt="Baggy Jeans">
+      <div class="product-overlay" onclick="addToCart('Baggy Jeans', 60)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-jeans"></div>
+      </div>
+    </div>
+    <p>Baggy Jeans</p>
+    <span>$60</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Baggy Marrom.png" alt="Baggy Marrom">
+      <div class="product-overlay" onclick="addToCart('Baggy Marrom', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-marrom"></div>
+      </div>
+    </div>
+    <p>Baggy Marrom</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Camisa Carhartt.png" alt="Camisa Carhartt">
+      <div class="product-overlay" onclick="addToCart('Camisa Carhartt', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-carhartt"></div>
+      </div>
+    </div>
+    <p>Camisa Carhartt</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Camisa Dr.Cepper.png" alt="Camisa Dr.Cepper">
+      <div class="product-overlay" onclick="addToCart('Camisa Dr.Cepper', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-drcepper"></div>
+      </div>
+    </div>
+    <p>Camisa Dr.Cepper</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Camisa Listrada.png" alt="Camisa Listrada">
+      <div class="product-overlay" onclick="addToCart('Camisa Listrada', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-listrada"></div>
+      </div>
+    </div>
+    <p>Camisa Listrada</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Camisa nike Blue.png" alt="Camisa nike Blue">
+      <div class="product-overlay" onclick="addToCart('Camisa nike Blue', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-nike"></div>
+      </div>
+    </div>
+    <p>Camisa nike Blue</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Camisa The Smiths.png" alt="Camisa The Smiths">
+      <div class="product-overlay" onclick="addToCart('Camisa The Smiths', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-smiths"></div>
+      </div>
+    </div>
+    <p>Camisa The Smiths</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Jaqueta de couro Black.png" alt="Jaqueta de couro Black">
+      <div class="product-overlay" onclick="addToCart('Jaqueta de couro Black', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-couro-black"></div>
+      </div>
+    </div>
+    <p>Jaqueta de couro Black</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Jaqueta de couro marrom.png" alt="Jaqueta de couro marrom">
+      <div class="product-overlay" onclick="addToCart('Jaqueta de couro marrom', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-couro-marrom"></div>
+      </div>
+    </div>
+    <p>Jaqueta de couro marrom</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Jaqueta jeans.png" alt="Jaqueta jeans">
+      <div class="product-overlay" onclick="addToCart('Jaqueta jeans', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-jeans-jacket"></div>
+      </div>
+    </div>
+    <p>Jaqueta jeans</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Jaqueta New Era Blue.png" alt="Jaqueta New Era Blue">
+      <div class="product-overlay" onclick="addToCart('Jaqueta New Era Blue', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-newera"></div>
+      </div>
+    </div>
+    <p>Jaqueta New Era Blue</p>
+    <span>$70</span>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="PRODUCTS\Jaqueta School.png" alt="Jaqueta School">
+      <div class="product-overlay" onclick="addToCart('Jaqueta School', 70)">
+        <button class="add-cart-btn">ADICIONAR AO CARRINHO</button>
+        <div class="cart-feedback" id="feedback-school"></div>
+      </div>
+    </div>
+    <p>Jaqueta School</p>
+    <span>$70</span>
+  </div>
+</section>
+
+<!-- IMAGEM FINAL -->
+<section class="banner"></section>
+
+<script>
+let cartCount = 0;
+
+function addToCart(productName, price) {
+  cartCount++;
+  
+  // Atualiza contador do carrinho
+  document.getElementById('cartCount').textContent = cartCount;
+  
+  // Feedback visual no botão
+  const overlay = event.currentTarget;
+  const btn = overlay.querySelector('.add-cart-btn');
+  const feedback = overlay.querySelector('.cart-feedback');
+  
+  const originalText = btn.textContent;
+  btn.textContent = '✓ ADICIONADO!';
+  btn.style.background = '#28a745';
+  feedback.textContent = `${productName} - $${price}`;
+  feedback.style.opacity = '1';
+  
+  // Reset após 2 segundos
+  setTimeout(() => {
+    btn.textContent = originalText;
+    btn.style.background = '#ff4444';
+    feedback.textContent = '';
+  }, 2000);
+  
+  console.log(`✅ ${productName} adicionado ao carrinho por $${price}`);
+}
+</script>
+
+</body>
+</html>
